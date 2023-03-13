@@ -6,10 +6,10 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: # xxx.jpg
   address: >
 
-years: [2022, 2021, 2020]
+years: # [2023, 2022, 2021, 2020]
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 experience: true
