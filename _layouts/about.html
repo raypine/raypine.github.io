@@ -47,9 +47,9 @@ layout: default
     {% endif %}
 
 
-    {% if page.news %}
+    <!-- {% if page.news %}
     <div class="news">
-      <h5>Experiences </h5>
+      <h4>Experiences </h4>
       {% if site.news  %}
         <div class="table-responsive">
           <table class="table table-sm table-borderless">
@@ -72,18 +72,17 @@ layout: default
         <p>No news so far...</p>
       {% endif %}
     </div>
-      <!-- {% include news.html %} -->
-    {% endif %}
-
-    <!-- {% if page.experience %}
-      <div class="publications">
-        <h5>Experiences </h5>
-        <h2 class="year"></h2>
-        <div class="title">2020 - Nov. 2020
-        Research intern@Alibaba Group, Taobao Tech
-        </div> 
-      </div>
+      {% include news.html %}
     {% endif %} -->
+
+    {% if page.experience %}
+    <h4 id="experience">Experience</h4>
+    <ul>
+      <li>[2022.3 - Now]  Research Engineer, NetEase Games AI Lab</li>
+      <li>[2021.5 - 2021.7]  Intern, Tao Technology Department, Alibaba Group</li>
+      <li>[2018.11 - 2019.9]  Intern, 3D Vision Department, SenseTime</li>
+    </ul>
+    {% endif %}
 
 
 
