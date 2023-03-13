@@ -6,4 +6,4 @@ to: 7/2021
 inline: true
 ---
 
-Research Intern, [Tao Technology Department, Alibaba Group](https://tech.taobao.org)
+Research Intern, Tao Technology Department, Alibaba Group
