@@ -26,8 +26,8 @@
       <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
-          {% if author.last == site.scholar.last_name%}
-            {% if site.scholar.first_name contains author.first%}
+          {% if author.last == site.scholar.first_name%}
+            {% if site.scholar.last_name contains author.first%}
               {% assign author_is_self = true %}
             {% endif %}
           {% endif %}
@@ -75,9 +75,9 @@
 
       <div class="periodical">
       {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
+        <em style="color: brown">{{entry.journal}}</em>
       {% elsif entry.type == "inproceedings" %}
-        <em>{{entry.booktitle}}</em>
+        <em style="color: brown">{{entry.booktitle}}</em>
       {% endif %}
       {% if entry.year %}
         {{entry.year}}
