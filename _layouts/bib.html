@@ -27,7 +27,7 @@
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
           {% if author.last == site.scholar.first_name%}
-            {% if site.scholar.last_name contains author.first%}
+            {% if author.first contains site.scholar.last_name %}
               {% assign author_is_self = true %}
             {% endif %}
           {% endif %}
@@ -80,7 +80,7 @@
         <em style="color: brown">{{entry.booktitle}}</em>
       {% endif %}
       {% if entry.year %}
-        {{entry.year}}
+        <span style="color: brown">{{entry.year}}</span>
       {% endif %}
       </div>
     {% endif %}
