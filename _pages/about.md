@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: # xxx.jpg
+  image: # profile.jpg
   address: >
 
 years: # [2023, 2022, 2021, 2020]
