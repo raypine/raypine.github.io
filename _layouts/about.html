@@ -42,10 +42,12 @@ layout: default
     {% if page.selected_papers %}
       <div class="publications">
         <h4>Publication</h4>
+        
+        <!-- route -->
         <table border="1">
           <thead>
             <tr>
-              <th>MoCap</th>
+              <th><b>MoCap</b></th>
               <th><div style="color: gray">Single-Person</div></th>
               <th><div style="color: gray">Multi-Person</div></th>
             </tr>
@@ -53,14 +55,14 @@ layout: default
           <tbody>
             <tr>
               <th><div style="color: gray">Single-View</div></th>
-              <td>ProPose (CVPR 23, analytical probability, fusion) </td>
+              <td><a href="#propose.png">ProPose</a> (CVPR 23, analytical probability, fusion) </td>
               <td>SMAP (ECCV 20, global translation, occlusion) </td>
             </tr>
             <tr>
               <th><div style="color: gray">Multi-View</div></th>
               <td>Mirror (CVPR 21 Oral, dataset, optimization)</td>
               <td>MVPose (TPAMI 21, match, track, filter) <br> 
-                  QuickPose (SIGGRAPH 22, match, speed up) 
+                  QuickPose (SIGGRAPH 22, speed up match) 
               </td>
             </tr>
           </tbody>
@@ -71,7 +73,7 @@ layout: default
         <table border="1">
           <thead>
             <tr>
-              <th>Recon</th>
+              <th><b>Recon</b></th>
               <th><div style="color: gray">Single-Person</div></th>
               <th><div style="color: gray">Multi-Person</div></th>
             </tr>
@@ -85,10 +87,14 @@ layout: default
             <tr>
               <th><div style="color: gray">Multi-View</div></th>
               <td></td>
-              <td>MultiNB (SIGGRAPH 22, novel view, segmentation)  </td>
+              <td>MultiNB (SIGGRAPH 22, novel view)  </td>
             </tr>
           </tbody>
         </table>
+        
+        <br>
+        <!-- route -->
+
         {% bibliography -f papers -q @*[selected=true]* %}
       </div>
     {% endif %}
