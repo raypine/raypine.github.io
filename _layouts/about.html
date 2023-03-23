@@ -42,6 +42,7 @@ layout: default
     {% if page.selected_papers %}
       <div class="publications">
         <h4>Publication</h4>
+        {% include route.html %}
         {% bibliography -f papers -q @*[selected=true]* %}
       </div>
     {% endif %}
