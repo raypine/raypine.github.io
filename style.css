@@ -45,7 +45,7 @@ body {
 table.pub_table {
   table-layout: fixed;
   width: 100%;
-  border-spacing: 0px 10px;
+  border-spacing: 0px 0px;
 }
 
 table.pub_table tr.focus {
