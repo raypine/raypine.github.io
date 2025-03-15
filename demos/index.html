@@ -1,63 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Archived Demos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demos</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+	
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
-
 <body>
-    <div class="container">
-		<h1 class="post-title"> Archived Demos </h1>
-		<br>
-		<article>
-			<h4>Human Motion Capture (with Hand) and Camera Tracking from Monocular Videos
-			</h4>
-			<div class="row">
-				<div class="col-sm" style="max-width: 40%;">
-					<video class="myvideo rounded z-depth-1" width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-						<source src="assets/mocap_dance1_comp.mp4" type="video/mp4">
-						</source>
-					</video>
-				</div>
-				<div class="col-sm" style="max-width: 44.7%;">
-					<video class="myvideo rounded z-depth-1" width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-						<source src="assets/mocap_dance2_comp.mp4" type="video/mp4">
-						</source>
-					</video>
-				</div>
-			</div>
-			<h4>Supporting 2D/3D Scene Effects 
-			</h4>
-			<div class="row">
-				<div class="col-sm" style="max-width: 40%;">
-					<video class="myvideo rounded z-depth-1" width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-						<source src="assets/mocap_dance1_2dfuse.mp4" type="video/mp4">
-						</source>
-					</video>
-				</div>
-				<div class="col-sm" style="max-width: 40%;">
-					<video class="myvideo rounded z-depth-1" width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-						<source src="assets/mocap_dance2_3dscene.mp4" type="video/mp4">
-						</source>
-					</video>
-				</div>
-			</div>
-			<h4>Simple AI-assisted Pose Editing and Pose Matching
-			</h4>
-				<div class="row">
-					<div class="col-sm" style="max-width: 60%;">
-						<video class="myvideo rounded z-depth-1" width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-							<source src="assets/demo_poseeditor_comp.mp4" type="video/mp4">
-							</source>
-						</video>
-					</div>
-				</div>
-			</h4>
-		</article>
-    </div>
-</body>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h1 class="title is-2 publication-title" style="color:#5a6268;">Archived Demos</h1>            
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero; is-small" style="max-width: 85%; margin: 0 auto;">
+  <div style="color:#5a6268" class="title is-4 publication-title">
+    Motion Capture
+  </div>
+  <div style="color:#5a6268; margin-bottom: -2rem;">
+    Human Motion Capture (Body + Hand) and Camera Tracking from Monocular Videos; Supporting 2D/3D Scene Effects
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="carousel results-carousel">
+
+        <div class="item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./assets/mocap_dance2_3dscene.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./assets/mocap_dance1_2dfuse.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./assets/eggy.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./assets/mocap_dance2_comp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./assets/mocap_dance1_comp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div style="color:#5a6268; margin-bottom: 1rem; margin-top: -2rem;">
+    Learning-Based Shape Deformation for Surface Details Correction
+  </div>
+  <video class="rounded" width="35%" autoplay controls muted loop playsinline>
+    <source src="assets/shape_deform.mp4" type="video/mp4">
+    </source>
+  </video>
+</section>
+
+<br>
+<section class="hero; is-small" style="max-width: 85%; margin: 0 auto;">
+  <div style="color:#5a6268" class="title is-4 publication-title">
+    Pose Editing
+  </div>
+  <div style="color:#5a6268; margin-bottom: 1rem;">
+    Simple AI-assisted Pose Editing and Pose Matching
+  </div>
+  <video class="rounded" width="35%" autoplay controls muted loop playsinline>
+    <source src="assets/demo_poseeditor_comp.mp4" type="video/mp4">
+    </source>
+  </video>
+
+</section>
+
+</body>
 </html>
